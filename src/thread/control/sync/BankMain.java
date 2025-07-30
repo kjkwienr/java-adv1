@@ -8,7 +8,9 @@ public class BankMain {
 
         //BankAccount bankAccount = new BankAccountV1(1000);
         //BankAccount bankAccount = new BankAccountV2(1000);
-        BankAccount bankAccount = new BankAccountV3(1000);
+        //BankAccount bankAccount = new BankAccountV3(1000);
+        //BankAccount bankAccount = new BankAccountV4_Lock(1000);
+        BankAccount bankAccount = new BankAccountV5_Lock(1000);
 
         Thread t1 = new Thread(new WithdrawTask(bankAccount, 800), "t1");
         Thread t2 = new Thread(new WithdrawTask(bankAccount, 800), "t2");
